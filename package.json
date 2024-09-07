@@ -1,0 +1,82 @@
+{
+  "name": "@yyrjlw/vue-gradient-color-picker",
+  "version": "0.1.0",
+  "description": "An easy to use color/gradient picker for Vue.js",
+  "type": "module",
+  "main": "./lib/index.umd.cjs",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "author": {
+    "name": "yyrjlw",
+    "email": "lwxingkong@qq.com"
+  },
+  "license": "MIT",
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "rimraf lib && run-p  build-type build-only",
+    "build-only": "vite build",
+    "build-type": "vue-tsc --build --force && tsc-alias -p tsconfig.build.json",
+    "build-example": "vite build --mode example",
+    "preview": "vite preview --mode example",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/",
+    "prepare": "husky",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "lodash-es": "^4.17.21",
+    "tinycolor2": "1.4.2",
+    "vue-with-install": "^1.0.1"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.10.4",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^20.14.14",
+    "@types/tinycolor2": "^1.4.6",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "sass": "^1.77.8",
+    "tsc-alias": "^1.8.10",
+    "typescript": "~5.5.4",
+    "unocss": "^0.62.3",
+    "vite": "^5.4.2",
+    "vite-plugin-css-injected-by-js": "^3.5.1",
+    "vue": "^3.4.38",
+    "vue-tsc": "^2.0.29"
+  },
+  "peerDependencies": {
+    "vue": "3.x"
+  },
+  "keywords": [
+    "gradient",
+    "vue",
+    "color",
+    "picker",
+    "tool",
+    "editor"
+  ],
+  "lint-staged": {
+    "**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ]
+  }
+}
