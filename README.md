@@ -33,3 +33,7 @@ const colorValue = ref('')
 | ----------------------------------------------------------------------------------------------------------- | -------- |
 | [API > onChange](https://github.com/hxf31891/react-gradient-color-picker?tab=readme-ov-file#api)            | v-model  |
 | [useColorPicker](https://github.com/hxf31891/react-gradient-color-picker?tab=readme-ov-file#usecolorpicker) | 暂未实现 |
+
+## Demo
+
+[demo link](https://gradientcolorpicker.pages.dev/)
