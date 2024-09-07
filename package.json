@@ -11,6 +11,11 @@
     "email": "lwxingkong@qq.com"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/yyrjlw/GradientColorPicker",
+  "homepage": "https://gradientcolorpicker.pages.dev",
   "files": [
     "lib",
     "LICENSE",
