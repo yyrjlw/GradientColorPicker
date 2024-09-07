@@ -1,5 +1,7 @@
 # @yyrjlw/vue-gradient-color-picker
 
+# [READ of English](readme/english.md)
+
 该组件“翻译”自[react-best-gradient-color-picker](https://www.npmjs.com/package/react-best-gradient-color-picker)
 
 ## 安装
